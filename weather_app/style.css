@@ -1,0 +1,77 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+::placeholder{
+    color: white;
+}
+body{
+    font-family: 'IBM Plex Mono', monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url(media/background.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    background: #000000d0;
+    color: white;
+    padding: 2em;
+    border-radius: 30px;
+    max-width: 400px;
+    width: 100%;
+}
+.search-bar{
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.searchBtn{
+    border-radius: 50%;
+    height: 3em;
+    width: 3em;
+    outline: none;
+    background: rgba(73, 96, 223, 0.863);
+}
+.searchBtn:hover{
+    background: rgb(73, 96, 223);
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+.searchField{
+    width: 85%;
+    padding: .8em 1.2em;
+    border: none;
+    border-radius: 20px;
+    font-family: inherit;
+    background: rgba(255, 255, 255, 0.288);
+    color: rgb(255, 255, 255);
+}
+.city{
+    font-size: 1.3rem;
+}
+.temperatureContainer{
+    display: flex;
+    justify-content: flex-start;
+}
+.temperature{
+    padding: 1em 0em;
+    font-size: 1.5rem;
+}
+img{
+    padding: 1em 0em;
+    position: relative;
+}
+.weather-condition{
+text-transform: capitalize;
+}
+.loading{
+    visibility: hidden;
+}

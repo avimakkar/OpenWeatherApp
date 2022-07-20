@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Style css-->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google stylesheet-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,500;1,300&display=swap" rel="stylesheet">
+
+    <!--Fontawseome css-->
+    <script src="https://kit.fontawesome.com/440e50b341.js" crossorigin="anonymous"></script>
+
+    <title>Weather app</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="search-bar">
+            <input class="searchField" type="text" placeholder="Search">
+            <button class="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class = "weatherPanel loading">
+            <div class="city">Weather in Vacnouver</span></div>
+            <div class="temperatureContainer">
+                <img src="https://openweathermap.org/img/wn/04n.png" alt="" class="icon" />
+                <div class="temperature"> 9.82°C</div>
+            </div>
+            <div class="weather-condition">Cloudy</div>
+            <div class="humidity">Humidity: 60%</div>
+            <div class="windSpeed">wind Speed: 6.2 km/h</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
